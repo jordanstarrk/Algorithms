@@ -53,7 +53,7 @@ class Test(unittest.TestCase):
     unique_string = "asDf"
     non_unique_string = "non unique"
 
-    def test_normaliz_str(self):
+    def test_normalize_str(self):
         self.assertTrue(normalize_str(Test.unique_string), "asdf")
         self.assertTrue(normalize_str(Test.non_unique_string), "nonunique")
 
