@@ -8,6 +8,10 @@
 import unittest
 # -----------------------------------------------------------
 
+# -----------------------------------------------------------
+# Approach 1 - Using Hashtable
+# -----------------------------------------------------------
+
 def check_permutation_using_hashtable(my_string1, my_string2):
     # Create a dictionary with Keys() = characters, Values() = number of times it occurred in both strings
     # For String 1: Populate Values for each Key in the dictionary
@@ -42,6 +46,10 @@ def check_permutation_using_hashtable(my_string1, my_string2):
         else:
             return True
 
+# -----------------------------------------------------------
+# Approach 2 - Using No Additional Datastructures 
+# -----------------------------------------------------------
+        
 def check_permutation_using_count(my_string1, my_string2):
     is_true = False
     for letter in my_string1:
